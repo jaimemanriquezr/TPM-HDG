@@ -1,0 +1,3 @@
+[submodule "src/mesh-generation/utilities/mesh2d"]
+	path = src/mesh-generation/utilities/mesh2d
+	url = https://github.com/jaimemanriquezr/mesh2d.git

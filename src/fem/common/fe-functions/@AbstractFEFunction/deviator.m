@@ -1,0 +1,6 @@
+function tr = deviator(obj)
+%DEVIATOR  Deviatoric part p - tr(p)/n*Id of a square tensor-valued function.
+    tr = FEFunction(@(varargin) ...
+    DeviatorOperator.apply_action(obj.evaluate(varargin{:})), ...
+    obj.signature);
+end
