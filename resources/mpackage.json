@@ -4,7 +4,7 @@
   "id": "9e8e3192-bbff-4887-bb77-f5f14ccf2f64",
   "formerNames": [],
   "displayName": "TPM-HDG",
-  "summary": "MATLAB toolbox for hybridizable discontinuous Galerkin (HDG) methods with the Transfer Path Method (TPM) for unfitted boundaries and dissimilar-mesh couplings.",
+  "summary": "A MATLAB package for unfitted hybridizable discontinuous Galerkin methods",
   "tags": [
     "hdg",
     "finite-elements",
