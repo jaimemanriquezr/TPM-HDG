@@ -19,21 +19,25 @@ of TPM started in 2020 during my MSc thesis.
   (a modified copy of D. Engwirda's MESH2D), a git submodule. Clone with
   `git clone --recurse-submodules https://github.com/jaimemanriquezr/TPM-HDG.git`,
   or run `git submodule update --init` in an existing clone. The `.mltbx`
-  file already contains it.
+  file and the File Exchange package already contain it.
 
 TPM-HDG is a MATLAB package (`resources/mpackage.json`, name `tpmhdg`,
-display name TPM-HDG). It installs in one of three ways; each puts `src/`,
-`examples/` and `tests/` (with their subfolders) on the path.
+display name TPM-HDG), also on
+[File Exchange](https://se.mathworks.com/matlabcentral/fileexchange/185301-tpm-hdg).
+It installs in one of three ways; each puts `src/`, `examples/` and
+`tests/` (with their subfolders) on the path.
 
-1. **With the MATLAB package manager.** From a clone (with the submodule):
-   `mpminstall("path/to/TPM-HDG")`. Uninstall with `mpmuninstall("tpmhdg")`.
+1. **With the MATLAB package manager.** `mpminstall("tpmhdg")` installs it
+   from File Exchange; uninstall with `mpmuninstall("tpmhdg")`. MPM cannot
+   search File Exchange, so `mpmsearch` does not find it: install it by
+   name. To install a local clone (with the submodule) instead, use
+   `mpminstall("path/to/TPM-HDG")`.
 2. **From source.** In a clone, run `initpath` once per session from the
    repository root; nothing is installed.
 3. **The toolbox file from Releases.** Download `TPM-HDG.mltbx` from the
    repository's Releases page and open it in MATLAB, or run
-   `matlab.addons.install("TPM-HDG.mltbx")`. It includes `mesh2d`.
-   Uninstall from the Add-On Manager or with
-   `matlab.addons.uninstall("TPM-HDG")`.
+   `matlab.addons.install("TPM-HDG.mltbx")`. Uninstall from the Add-On
+   Manager or with `matlab.addons.uninstall("TPM-HDG")`.
 
 `Contents.m` lists the main classes and functions by area.
 
